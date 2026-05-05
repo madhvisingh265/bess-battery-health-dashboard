@@ -1,3 +1,8 @@
+import os
+
+if not os.path.exists("model/bess_model.pkl") or not os.path.exists("outputs/processed_data.csv"):
+    import train_bess_model
+    
 import streamlit as st
 import pandas as pd
 import joblib
